@@ -7,7 +7,7 @@ const express = require('express');
 const server = express();
 
 //declare a port 
-const PORT = process.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 server.listen(PORT, () => {
     console.log(`listening to Port ${PORT}`);
